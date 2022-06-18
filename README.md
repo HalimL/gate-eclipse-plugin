@@ -11,9 +11,10 @@ The plugin provides access to the system through the Eclipse Java IDE.
 The plugin can be installed by following the steps below within Eclipse:
 
 * Help > Install New Software... > Add > Local...,
-* The browse and find the update site in your file system,
-* Accept all changes by pressing OK, select your feature 
-* Click Next, and proceed with the installation process.
+* Browse and open the update site `gate-eclipse-plugin/gate-eclipse-plugin-update-site` in your file system... > Add,
+* Gate Plugin Feature should now be visible under Uncategorized,
+* Select the feature and click Next... > click on Finish,
+* Accept all changes and proceed with the installation process.
 
 ## Running Locally
 
