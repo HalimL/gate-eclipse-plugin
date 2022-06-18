@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="de.lmu.gateplugin.commands.category"
+            description="Command to launch the GATE plugin"
+            id="de.lmu.gateplugin.commands.lauchGateCommand"
+            name="Launch Gate">
+      </command>
+      <category
+            id="de.lmu.gateplugin.commands.category"
+            name="Gate Command Category">
+      </category>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="de.lmu.gateplugin.handlers.GateLauncherHandler"
+            commandId="de.lmu.gateplugin.commands.lauchGateCommand">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="de.lmu.gateplugin.commands.lauchGateCommand"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+G">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="de.lmu.gateplugin.toolbars.launchToolbar">
+            <command
+                  commandId="de.lmu.gateplugin.commands.lauchGateCommand"
+                  disabledIcon="icons/gate_icon.png"
+                  icon="icons/gate_icon.png"
+                  id="de.lmu.gateplugin.toolbars.launchGateToolbar"
+                  style="push"
+                  tooltip="Launch Gate Plugin">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="de.lmu.gateplugin.ui.LoginView"
+            icon="icons/gate_icon.png"
+            id="de.lmu.gateplugin.LoginView"
+            name="Login"
+            restorable="true">
+      </view>
+      <view
+            allowMultiple="false"
+            class="de.lmu.gateplugin.ui.TaskView"
+            icon="icons/gate_icon.png"
+            id="de.lmu.gateplugin.TaskView"
+            name="GATE"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="de.lmu.gateplugin.ui.GatePerspective"
+            icon="icons/gate_icon.png"
+            id="de.lmu.gateplugin.perspective"
+            name="GATE">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="de.lmu.gateplugin.ui.pages.GatePrefPage"
+            id="gate-eclipse-plugin.preference"
+            name="Gate Preference">
+      </page>
+   </extension>
+
+</plugin>
