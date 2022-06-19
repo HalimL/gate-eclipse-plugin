@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/de.lmu.gateplugin_1.0.0.jar" id="de.lmu.gateplugin" version="1.0.0"/>
+   <description name="GATE Eclipse Plugin Update Site">
+      Plugin that provides access to the system through the Eclipse Java IDE.
+   </description>
+   <feature url="features/de.lmu.gateplugin_1.0.0.jar" id="de.lmu.gateplugin" version="1.0.0">
+      <category name="de.lmu.gateplugin"/>
+   </feature>
+   <category-def name="de.lmu.gateplugin" label="GATE Eclipse Plugin">
+      <description>
+         Plugin that provides access to the system through the Eclipse Java IDE.
+      </description>
+   </category-def>
 </site>

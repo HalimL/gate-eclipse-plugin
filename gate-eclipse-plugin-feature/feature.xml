@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="de.lmu.gateplugin"
-      label="Gate Plugin Feature"
+      label="Gate Plugin"
       version="1.0.0">
 
    <description url="https://gitlab.lrz.de/0000000001346E41/gate-eclipse-plugin">
