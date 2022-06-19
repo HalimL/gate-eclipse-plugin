@@ -21,6 +21,6 @@ The plugin can be installed by following the steps below within Eclipse:
 The plugin can also be run locally in your development environment by following the steps below:
 
 * Download [Eclipse Plug-in Development Environment (PDE)](http://www.eclipse.org/pde/)
-* "File" > "Import..."
-* "General" > "Existing Projects into Workspace"
-* "Browse..." and choose the project's root
+* "File" > "Open Projects from File System..."
+* Select the downloaded ‘gate-eclipse-plugin‘ in the file system and import the project by clicking on Finish
+* Run the plug-in as an Eclipse Application
